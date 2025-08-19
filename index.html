@@ -6,60 +6,257 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.png"
+      type="image/x-icon"
+    />
     <title>Mapa na Mochila - Home</title>
   </head>
   <body>
-    <header class="header-container">
-      <nav class="header-content">
-        <div style="width: 50%; display: flex; align-content: center">
+    <!--Header-->
+    <header>
+      <div class="container header-container">
+        <div class="header-desktop-item-1">
           <img
-            src="./assets/icons/Logo Mapa na Mochila.svg"
-            alt="Mapa na Mochila"
-            class="logo"
+            src="./assets/icons//logo-mochila.svg"
+            alt="Mundo na Mchila"
+            class="logo header-logo mx-2"
           />
-          <ul class="nav-container">
-            <li class="nav-item tyopeface-desktop-b3-labe">Hanking</li>
-            <li class="nav-item tyopeface-desktop-b3-labe">Sobre Nós</li>
-            <li class="nav-item tyopeface-desktop-b3-labe">Contato</li>
-          </ul>
+          <nav class="navbar-desktop">
+            <ul class="nav-container">
+              <li class="nav-item mx-2">
+                <a href="#" class="nav-link">Hanking</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a href="#" class="nav-link">Sobre nós</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a href="#" class="nav-link">Contato</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="search-container">
-          <input placeholder="Busca" type="text" class="search-input" />
-          <img src="./assets/icons/search.svg" class="search-icon" />
+        <div class="header-desktop-item-2">
+          <div class="search-container">
+            <input type="text" class="search-input" />
+            <img
+              src="./assets/icons/search.svg"
+              alt="Procurar"
+              class="search-icon"
+            />
+          </div>
         </div>
-      </nav>
-    </header>
-    <footer class="footer-container">
-      <div class="logo-container">
-        <img
-          src="./assets/icons/Logo Mapa na Mochila.svg"
-          alt=""
-          class="logo-footer"
-        />
       </div>
-      <div class="footer-content">
-        <ul class="categoria-section-footer">
-          <li class="item typeface-desktop-h6 color-white">Posts</li>
-          <li class="item typeface-desktop-h6 color-white">Categorias</li>
-          <li class="item typeface-desktop-h6 color-white">Suporte</li>
-        </ul>
-        <div class="inscription-section-footer color-white">
-          <h3 class="typeface-desktop-h3 color-white">
-            Quer ser avisado sobre novos posts?
-          </h3>
-          <p class="color-white">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum sint
-            sit quas recusandae quod? Ex optio alias, molestias voluptas
-            eligendi nihil commodi excepturi a blanditiis tempore? Eos autem
-            vitae sapiente!
+    </header>
+    <!--Main-->
+    <!--Hero-->
+    <img src="./assets/icons/bg-hero.svg" alt="" class="bg-hero" />
+    <main class="container hero-container py-5">
+      <section class="main-item-1">
+        <h1 class="heads-desktop-h1">Descubra o seu próximo destino aqui!</h1>
+        <p class="body-desktop-b1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsa vero
+          natus consectetur nostrum pariatur autem sit quod, molestias velit.
+          Ipsum incidunt doloribus quam, esse quod eos velit unde praesentium!
+        </p>
+      </section>
+      <section class="main-item-2">
+        <img
+          src="./assets/imgs/img1.png"
+          alt=""
+          srcset=""
+          class="img-hero img-hero-1"
+        />
+        <img
+          src="./assets/imgs/img2.jpg"
+          alt=""
+          srcset=""
+          class="img-hero img-hero-2"
+        />
+        <img
+          src="./assets/imgs/img3.jpg"
+          alt=""
+          srcset=""
+          class="img-hero img-hero-3"
+        />
+      </section>
+    </main>
+
+    <!--Article-->
+
+    <!--Section Posts-->
+    <article class="container container-posts py-5">
+      <section class="article-title-posts py-3">
+        <h2 class="heads-desktop-h2 py-2">Destaque</h2>
+        <p class="body-desktop-p2">Leia mais ></p>
+      </section>
+      <section class="article-posts-container p-2">
+        <div class="article-posts-item-1 pr-2">
+          <h3 class="heads-desktop-h3 py-2">Titulo aleatório de postagem</h3>
+          <p class="body-desktop-p1">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem psum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
           </p>
-          <div class="inscription-container">
-            <input placeholder="example@example.com" name="email" id="email" />
-            <button class="primary-button">Inscrever-se</button>
+          <div class="post-profile-contaianer py-2">
+            <img src="" alt="" class="profile-img" />
+            <span class="profile-name px-2">Por Leniton</span>
+            <span class="post-data">25/04/2025</span>
+          </div>
+        </div>
+        <div class="article-posts-item-2 pl-2">
+          <div class="article-post-secondario-1 py-2">
+            <h3 class="heads-desktop-h4 py-1">Titulo aleatório de postagem</h3>
+            <p class="body-desktop-p2">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <div class="post-profile-contaianer py-2">
+              <img src="" alt="" class="profile-img" />
+              <span class="profile-name px-2">Por Leniton</span>
+              <span class="post-data">25/04/2025</span>
+            </div>
+          </div>
+          <div class="article-post-secundario-2 py-2">
+            <h3 class="heads-desktop-h4 py-1">Titulo aleatório de postagem</h3>
+            <p class="body-desktop-p2">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <div class="post-profile-contaianer py-2">
+              <img src="" alt="" class="profile-img" />
+              <span class="profile-name px-2">Por Leniton</span>
+              <span class="post-data">25/04/2025</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!--Section Hanking-->
+
+    <article class="container container-hanking py-5">
+      <section class="article-title-hanking py-3">
+        <h2 class="heads-desktop-h2 py-2">Top Destinos</h2>
+        <p class="body-desktop-p2">Leia mais ></p>
+      </section>
+
+      <section class="article-hanking-container p-2">
+        <div class="card-container p-2">
+          <div class="card-item card-item-1">
+            <img src="" alt="" class="card-image" />
+            <h5 class="heads-desktop-h5 card-name">Rio de Janeiro</h5>
+          </div>
+          <div class="card-item card-item-2">
+            <img src="" alt="" class="card-image" />
+            <h5 class="heads-desktop-h5 card-name">Cairo</h5>
+          </div>
+          <div class="card-item card-item-3">
+            <h5 class="heads-desktop-h5 card-name">New York</h5>
+          </div>
+          <div class="card-item card-item-4">
+            <h5 class="heads-desktop-h5 card-name">Berlim</h5>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!--Section Categoria-->
+
+    <article class="container container-categoria py-5">
+      <section class="article-title-categoria py-3">
+        <h2 class="heads-desktop-h2 py-2">Categorias</h2>
+        <p class="body-desktop-p2">Leia mais ></p>
+      </section>
+      <section class="article-categoria-container p-2">
+        <div class="categoria-container">
+          <div class="categoria-item categoria-item-1">
+            <h5 class="heads-desktop-h5 categoria-nome">Natureza</h5>
+          </div>
+          <div class="categoria-item categoria-item-2">
+            <h5 class="heads-desktop-h5 categoria-nome">Metropole</h5>
+          </div>
+          <div class="categoria-item categoria-item-3">
+            <h5 class="heads-desktop-h5 categoria-nome">Árido</h5>
+          </div>
+          <div class="categoria-item categoria-item-4">
+            <h5 class="heads-desktop-h5 categoria-nome">Historico</h5>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!--Section Equipe-->
+
+    <article class="container container-equipe py-5">
+      <section class="article-title-equipe py-3"></section>
+    </article>
+    <!--Footer-->
+    <footer class="container footer-container">
+      <div class="container">
+        <div class="footer-logo-container">
+          <img
+            src="./assets/icons/logo-mochila.svg"
+            alt=""
+            class="footer-logo"
+          />
+        </div>
+        <div class="footer-content">
+          <ul class="categoria-section-footer">
+            <li class="item typeface-desktop-h6 color-white">
+              <h5 class="heads-desktop-h5">Posts</h5>
+              <ul class="footer-posts-container">
+                <li class="footer-posts-item">Mais Vistos</li>
+                <li class="footer-posts-item">Mais Populares</li>
+                <li class="footer-posts-item">Mais comentadods</li>
+                <li class="footer-posts-item">Mais Recentes</li>
+              </ul>
+            </li>
+            <li class="item typeface-desktop-h6 color-white">
+              <h5 class="heads-desktop-h5">Categorias</h5>
+              <ul class="footer-posts-container">
+                <li class="footer-categoria-item">Mais Vistos</li>
+                <li class="footer-categoria-item">Mais Populares</li>
+                <li class="footer-categoria-item">Mais comentadods</li>
+                <li class="footer-categoria-item">Mais Recentes</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="inscription-section-footer color-white">
+            <h3 class="typeface-desktop-h3 color-white">
+              Quer ser avisado sobre novos posts?
+            </h3>
+            <p class="color-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              sint sit quas recusandae quod? Ex optio alias, molestias voluptas
+              eligendi nihil commodi excepturi a blanditiis tempore? Eos autem
+              vitae sapiente!
+            </p>
+            <div class="inscription-container">
+              <input
+                placeholder="example@example.com"
+                name="email"
+                id="email"
+              />
+              <button class="primary-button">Inscrever-se</button>
+            </div>
           </div>
         </div>
       </div>
