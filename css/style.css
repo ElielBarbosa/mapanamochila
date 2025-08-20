@@ -38,6 +38,7 @@
   --gap-3: 48px;
   --gap-4: 72px;
   --gap-5: 128px;
+  --gap-6: 256px;
 }
 
 /*===============Reset e estilos específicos de página====================*/
@@ -140,27 +141,30 @@ li {
 .body-desktop-p1 {
   font-size: 18px;
   font-weight: 300;
-  line-height: 100%;
+  line-height: 120%;
+  color: var(--black-light);
 }
 .body-desktop-p2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 100%;
+  line-height: 120%;
+  color: var(--black-light);
 }
 .body-desktop-p3 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 100%;
+  line-height: 120%;
+  color: var(--black-light);
 }
 .body-desktop-p3_label {
   font-size: 16px;
   font-weight: 400;
-  line-height: 100%;
+  line-height: 120%;
 }
 .body-p3_bold {
   font-size: 16px;
   font-weight: 400;
-  line-height: 100%;
+  line-height: 120%;
 }
 
 /*=========================Espaçamentos===============================*/
@@ -308,6 +312,9 @@ li {
 }
 .p-5 {
   padding: var(--gap-5);
+}
+.p-6 {
+  padding: var(--gap-6);
 }
 
 .pt-1 {
@@ -602,7 +609,7 @@ header {
 }
 
 .article-posts-item-1 {
-  border-right: 1px solid var(--gray-3);
+  border-right: 1px solid var(--gray-6);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -613,7 +620,7 @@ header {
   background-position: center;
 }
 .article-post-secundario-2 {
-  border-top: 1px solid var(--gray-3);
+  border-top: 1px solid var(--gray-6);
 }
 .post-profile-contaianer {
   display: flex;
@@ -671,10 +678,15 @@ header {
   z-index: 99;
 }
 .card-container {
-  display: flex;
-  overflow: hidden;
-  gap: var(--gap-1);
-  flex-wrap: wrap;
+  display: grid;
+  grid-auto-flow: column;
+  /*grid-auto-columns: 25%;*/
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  /* scroll-snap-type: x mandatory; */
+  /* scroll-behavior: smooth; */
+  -webkit-overflow-scrolling: touch;
 }
 .card-item {
   width: 352px;
@@ -718,6 +730,13 @@ header {
   padding: 24px 16px;
   color: var(--white-normal);
 }
+.card-container::-webkit-scrollbar {
+  height: 8px;
+}
+.card-container::-webkit-scrollbar-thumb {
+  background: var(--primary-dark);
+  border-radius: 999px;
+}
 /*==============================Article Categoria==========================*/
 .article-title-categoria {
   position: relative;
@@ -736,9 +755,15 @@ header {
   z-index: 99;
 }
 .categoria-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+  display: grid;
+  grid-auto-flow: column;
+  /*grid-auto-columns: 25%;*/
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  /* scroll-snap-type: x mandatory; */
+  /* scroll-behavior: smooth; */
+  -webkit-overflow-scrolling: touch;
 }
 .categoria-item {
   width: 352px;
@@ -773,6 +798,14 @@ header {
 .card-name {
   padding: 24px 16px;
   color: var(--white-normal);
+}
+
+.categoria-container::-webkit-scrollbar {
+  height: 8px;
+}
+.categoria-container::-webkit-scrollbar-thumb {
+  background: var(--primary-dark);
+  border-radius: 999px;
 }
 /*==============================Article Equipe==========================*/
 .article-title-equipe {
@@ -857,6 +890,90 @@ header {
 #email:focus {
   outline: 2px solid var(--primary-normal);
 }
+
+/*==============================Section Equipe==========================*/
+.equipe-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.equipe-card {
+  width: 320px;
+  height: 340px;
+
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-color: silver;
+  border-radius: 16px;
+
+  outline: 3px solid var(--primary-normal);
+  box-shadow: var(--shadow-g);
+  transition: scale 0.5s ease-in-out;
+}
+.equipe-card:hover {
+  scale: 1.03;
+  transition: scale 0.5s ease-in-out;
+}
+
+.equipe-nome {
+  font-family: "Ubuntu";
+  background-image: var(--gradient-1);
+  padding: 5px 8px;
+  border-radius: 8px;
+  width: fit-content;
+  color: var(--white-normal);
+}
+.equipe-card-3 {
+  background-image: url(../assets/imgs/Eliel2.jpg);
+  background-size: cover;
+  background-position: top;
+}
+/*==============================Midia Queries==========================*/
+@media (max-width: 1530px) {
+  .container {
+    width: 900px;
+  }
+
+  .img-hero-1 {
+    width: 237px;
+    top: 16px;
+    left: 200px;
+    animation: img-hero-flip 8s ease-in-out 0.4s infinite alternate;
+  }
+  .img-hero-2 {
+    z-index: 3;
+    right: -100px;
+    top: -15px;
+    width: 180px;
+  }
+  .img-hero-3 {
+    z-index: 4;
+    bottom: -65px;
+    width: 180px;
+    position: absolute;
+    left: 60px;
+    animation: img-hero-flip 9s ease-in-out 1.8s infinite alternate;
+  }
+  .title-hero {
+    font-size: 64px;
+  }
+  .card-container {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .card-item {
+    margin: 0 8px;
+    width: 308px;
+  }
+  .primary-button {
+    width: 457px;
+    margin: 18px 0;
+  }
+}
+
 /*==============================Animations==========================*/
 
 @keyframes img-hero-flip {
