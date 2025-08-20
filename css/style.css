@@ -572,12 +572,12 @@ header {
   animation: img-hero-flip 9s ease-in-out 1.8s infinite alternate;
 }
 
-/*==============================Article - Geral==========================*/
+/*=============================section - Geral==========================*/
 
-.article-posts-container,
-.article-hanking-container,
-.article-categoria-container,
-.article-equipe-container {
+.section-posts-container,
+.section-hanking-container,
+.section-categoria-container,
+.section-equipe-container {
   background-color: var(--white-light);
   box-shadow: var(--shadow-m);
   border-radius: 16px;
@@ -585,11 +585,11 @@ header {
   position: relative;
 }
 
-/*==============================Article - Posts==========================*/
-.article-title {
+/*=============================section - Posts==========================*/
+.section-title {
   position: relative;
 }
-.article-title::after {
+.section-title::after {
   content: "";
   display: block;
   position: absolute;
@@ -603,12 +603,12 @@ header {
   z-index: 99;
 }
 
-.article-posts-item-1,
-.article-posts-item-2 {
+.section-posts-item-1,
+.section-posts-item-2 {
   flex: 1;
 }
 
-.article-posts-item-1 {
+.section-posts-item-1 {
   border-right: 1px solid var(--gray-6);
   display: flex;
   flex-direction: column;
@@ -619,7 +619,7 @@ header {
   background-attachment: inherit;
   background-position: center;
 }
-.article-post-secundario-2 {
+.section-post-secundario-2 {
   border-top: 1px solid var(--gray-6);
 }
 .post-profile-contaianer {
@@ -642,12 +642,12 @@ header {
   margin-left: auto;
 }
 
-/*==============================Article Posts==========================*/
+/*=============================.section Posts==========================*/
 
-.article-title-posts {
+.section-title-posts {
   position: relative;
 }
-.article-title-posts::after {
+.section-title-posts::after {
   content: "";
   display: block;
   position: absolute;
@@ -660,11 +660,11 @@ header {
   background-repeat: no-repeat;
   z-index: 99;
 }
-/*==============================Article Hanking==========================*/
-.article-title-hanking {
+/*=============================.section Hanking==========================*/
+.section-title-hanking {
   position: relative;
 }
-.article-title-hanking::after {
+.section-title-hanking::after {
   content: "";
   display: block;
   position: absolute;
@@ -737,11 +737,11 @@ header {
   background: var(--primary-dark);
   border-radius: 999px;
 }
-/*==============================Article Categoria==========================*/
-.article-title-categoria {
+/*=============================.section Categoria==========================*/
+.section-title-categoria {
   position: relative;
 }
-.article-title-categoria::after {
+.section-title-categoria::after {
   content: "";
   display: block;
   position: absolute;
@@ -807,11 +807,11 @@ header {
   background: var(--primary-dark);
   border-radius: 999px;
 }
-/*==============================Article Equipe==========================*/
-.article-title-equipe {
+/*=============================.section Equipe==========================*/
+.section-title-equipe {
   position: relative;
 }
-.article-title-equipe::after {
+.section-title-equipe::after {
   content: "";
   display: block;
   position: absolute;
