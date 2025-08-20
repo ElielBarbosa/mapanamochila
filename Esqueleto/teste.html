@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Mobile CSS</title>
+    <style>
+      :root {
+        --bg: #0b1220;
+        --menu-bg: #111a2e;
+        --text: #f2f5fa;
+        --brand: #159be2;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      header {
+        background: var(--menu-bg);
+        padding: 14px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--brand);
+      }
+
+      /* Esconde o checkbox */
+      #menu-toggle {
+        display: none;
+      }
+
+      /* Ícone hamburger */
+      .menu-btn {
+        display: inline-block;
+        cursor: pointer;
+        width: 28px;
+        height: 22px;
+        position: relative;
+      }
+      .menu-btn span {
+        background: var(--text);
+        display: block;
+        height: 3px;
+        border-radius: 2px;
+        margin: 5px 0;
+        transition: 0.3s;
+      }
+
+      /* Menu */
+      nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100%;
+        background: var(--menu-bg);
+        padding: 60px 20px;
+        transition: 0.3s;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      nav li {
+        margin: 16px 0;
+      }
+      nav a {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 18px;
+      }
+      nav a:hover {
+        color: var(--brand);
+      }
+
+      /* Quando marcado, abre o menu */
+      #menu-toggle:checked ~ nav {
+        left: 0;
+      }
+
+      /* Animação do botão */
+      #menu-toggle:checked + label .line1 {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      #menu-toggle:checked + label .line2 {
+        opacity: 0;
+      }
+      #menu-toggle:checked + label .line3 {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+
+      /* Desktop */
+      @media (min-width: 768px) {
+        .menu-btn {
+          display: none;
+        }
+        nav {
+          position: static;
+          width: auto;
+          height: auto;
+          background: none;
+          padding: 0;
+          display: flex;
+        }
+        nav ul {
+          display: flex;
+          gap: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">MinhaLogo</div>
+
+      <!-- Checkbox que controla o menu -->
+      <input type="checkbox" id="menu-toggle" />
+
+      <!-- Label funciona como botão (hamburger) -->
+      <label for="menu-toggle" class="menu-btn">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </label>
+
+      <!-- Menu -->
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
