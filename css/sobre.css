@@ -424,8 +424,8 @@ header {
   z-index: 999;
 }
 .container {
-  width: 1504px;
   margin: 0 auto;
+  width: 1504px;
 }
 .header-container {
   position: relative;
@@ -508,7 +508,6 @@ label {
 }
 .main_container {
   margin: 128px auto;
-  width: 900px;
 }
 .main_title {
   border-bottom: 1px solid var(--gray-3);
@@ -544,10 +543,14 @@ textarea {
   width: 25%;
 }
 /*==============================Section Equipe==========================*/
+.main_container {
+  margin: 0 auto;
+}
 .equipe-container {
   display: flex;
   justify-content: center;
   gap: 16px;
+  margin: 0 auto;
 }
 .equipe-card {
   width: 320px;
@@ -556,7 +559,6 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-color: silver;
   border-radius: 16px;
   outline: 3px solid var(--primary-normal);
   box-shadow: var(--shadow-g);
@@ -575,11 +577,22 @@ textarea {
   width: fit-content;
   color: var(--white-normal);
 }
+.equipe-card-1 {
+  background-image: url(../assets/imgs/leno.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.equipe-card-2 {
+  background-image: url(../assets/imgs/michele.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .equipe-card-3 {
   background-image: url(../assets/imgs/Eliel.jpg);
   background-size: cover;
   background-position: top;
 }
+
 /*==============================Footer==========================*/
 .footer-container {
   width: 100%;

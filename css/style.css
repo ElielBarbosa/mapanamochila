@@ -511,8 +511,8 @@ header {
   z-index: -1;
 }
 .hero-container {
+  margin: 128px auto;
   width: 1504px;
-  margin: 0 auto;
   display: flex;
 }
 .main-item-1,
@@ -593,6 +593,7 @@ header {
   border-right: 1px solid var(--gray-6);
   display: flex;
   flex-direction: column;
+  padding-right: 16px;
   justify-content: flex-end;
 
   background-size: cover;
@@ -621,7 +622,7 @@ header {
   background-size: cover;
 }
 .profile-img-3 {
-  background-image: url(../assets/imgs/michele.jpeg);
+  background-image: url(../assets/imgs/michele.jpg);
   background-position: center;
   background-size: 140%;
 }
@@ -666,7 +667,7 @@ header {
   transform: translate(-50%, 0);
   width: 126px;
   height: 125px;
-  background-image: url(../assets/icons/gps-icon.png);
+  background-image: url(../assets/icons/gps-icon.jpg);
   background-repeat: no-repeat;
   z-index: 99;
 }
@@ -765,17 +766,21 @@ header {
 .categoria-nome {
   color: var(--white-normal);
 }
+.categoria-item {
+  background-position: center;
+  background-size: cover;
+}
 .categoria-item-1 {
-  background-image: url(../assets/imgs/natureza.png);
+  background-image: url(../assets/imgs/natureza.jpg);
 }
 .categoria-item-2 {
-  background-image: url(../assets/imgs/big-city.png);
+  background-image: url(../assets/imgs/big-city.jpg);
 }
 .categoria-item-3 {
-  background-image: url(../assets/imgs/arido.png);
+  background-image: url(../assets/imgs/arido.jpg);
 }
 .categoria-item-4 {
-  background-image: url(../assets/imgs/historico.png);
+  background-image: url(../assets/imgs/historico.jpg);
 }
 .card-name {
   padding: 24px 16px;
@@ -844,7 +849,7 @@ header {
   background-position: center;
 }
 .equipe-card-2 {
-  background-image: url(../assets/imgs/michele.jpeg);
+  background-image: url(../assets/imgs/michele.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -918,10 +923,13 @@ header {
 }
 /*==============================Midia Queries==========================*/
 @media screen and (min-width: 979px) and (max-width: 1530px) {
+  /*============Header===========*/
   .container {
     width: 900px;
   }
-
+  .hero-container {
+    margin-top: 128px;
+  }
   .img-hero-1 {
     width: 237px;
     top: 16px;
@@ -964,7 +972,7 @@ header {
     margin: 18px 0;
   }
 
-  /*Footer*/
+  /*============Footer===========*/
 
   .footer-content {
     flex-direction: row;
@@ -983,6 +991,7 @@ header {
     order: 1;
   }
 }
+
 /* Até 980px */
 @media screen and (max-width: 980px) {
   header {
@@ -1019,7 +1028,51 @@ header {
     width: 80%;
   }
 
-  /*footer*/
+  /*============Hero===========*/
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 100px auto;
+  }
+  .main-item-1 {
+    align-content: center;
+    text-align: center;
+  }
+  .main-item-2 {
+    margin: 50px auto;
+  }
+  .img-hero-1 {
+    width: 130px;
+    height: 206px;
+  }
+  .img-hero-2 {
+    width: 100px;
+    height: 90px;
+    top: 20px;
+    right: 55px;
+  }
+  .img-hero-3 {
+    width: 100px;
+    height: 90px;
+    bottom: -244px;
+    left: 144px;
+  }
+  .section-posts-container {
+    flex-direction: column;
+  }
+  .section-posts-item-1 {
+    border-right: none;
+    border-bottom: 1px solid var(--gray-3);
+    padding-right: none;
+  }
+  /*============Equipe===========*/
+  .equipe-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  /*============Footer===========*/
   .footer-content {
     display: flex;
     flex-direction: column;

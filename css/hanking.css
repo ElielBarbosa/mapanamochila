@@ -544,8 +544,8 @@ textarea {
   width: 25%;
 }
 /*==============================Section Equipe==========================*/
-.hanking-container {
-  margin: 128px auto;
+.main-container {
+  margin-top: 128px;
 }
 .hanking-container > a {
   text-decoration: none;
@@ -571,9 +571,14 @@ textarea {
   transition: transform 0.5s;
   transform: scale(1.02);
 }
-.hanking-item > h6 {
+.hanking-item > h4 {
   color: var(--white-light);
   font-weight: 600;
+  display: inline-block;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: var(--primary-dark);
 }
 .hanking-item-1,
 .hanking-item-2,

@@ -508,7 +508,6 @@ label {
 }
 .main_container {
   margin: 128px auto;
-  width: 900px;
 }
 .main_title {
   border-bottom: 1px solid var(--gray-3);
