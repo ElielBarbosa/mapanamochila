@@ -607,22 +607,25 @@ textarea {
   outline: 2px solid var(--primary-normal);
 }
 /*==============================Midia Queries==========================*/
-@media (max-width: 1530px) {
+@media screen and (min-width: 979px) and (max-width: 1530px) {
   .container {
     width: 900px;
   }
+
   .img-hero-1 {
     width: 237px;
     top: 16px;
     left: 200px;
     animation: img-hero-float 8s ease-in-out 0.4s infinite alternate;
   }
+
   .img-hero-2 {
     z-index: 3;
     right: -100px;
     top: -15px;
     width: 180px;
   }
+
   .img-hero-3 {
     z-index: 4;
     bottom: -65px;
@@ -631,20 +634,98 @@ textarea {
     left: 60px;
     animation: img-hero-float 9s ease-in-out 1.8s infinite alternate;
   }
+
   .title-hero {
     font-size: 64px;
   }
+
   .card-container {
     gap: 16px;
     flex-wrap: wrap;
   }
+
   .card-item {
     margin: 0 8px;
     width: 308px;
   }
+
   .primary-button {
     width: 457px;
     margin: 18px 0;
+  }
+
+  /*Footer*/
+
+  .footer-content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .inscription-section-footer {
+    order: 2;
+  }
+
+  .footer-logo-container {
+    order: 0;
+  }
+
+  .categoria-section-footer {
+    order: 1;
+  }
+}
+/* Até 980px */
+@media screen and (max-width: 980px) {
+  header {
+    height: auto;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+  }
+
+  .header-container {
+    height: auto;
+    flex-direction: column;
+    padding: 16px 0;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .header-desktop-item-1 {
+    flex-direction: column;
+  }
+
+  .header-desktop-item-2 {
+    flex-direction: column;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-container {
+    width: 80%;
+  }
+
+  /*footer*/
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inscription-section-footer {
+    order: 1;
+  }
+
+  .footer-logo-container {
+    order: 0;
+  }
+
+  .categoria-section-footer {
+    order: 2;
   }
 }
 /*==============================Animations==========================*/
